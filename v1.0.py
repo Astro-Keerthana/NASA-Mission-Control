@@ -191,14 +191,8 @@ hr {
 # ─────────────────────────────────────────────────────────────────────────────
 # CONSTANTS
 # ─────────────────────────────────────────────────────────────────────────────
-# ─────────────────────────────────────────────────────────────────────────────
-# At the TOP of nasa_dashboard.py — replace the old constants block
-# ─────────────────────────────────────────────────────────────────────────────
 
-
-
-
-NASA_API_KEY   = "slGnKhhfZrANBVSzT3sLN1CEuuXaszvb9IIC5NBW"
+NASA_API_KEY   = "YOUR API"
 BASE_URL       = "https://api.nasa.gov"
 IMG_LIB_URL    = "https://images-api.nasa.gov"
 MOON_DIST_KM   = 384_400
