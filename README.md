@@ -131,7 +131,7 @@ nasa-mission-control/
 
 ## ⚖️ License & Attribution
 
-- Code: **MIT License** © 2026 araCreate Group
+- Code: © 2026 araCreate Group
 - Data: **NASA Open Data CC0** — [api.nasa.gov](https://api.nasa.gov/)
 - APOD images may carry individual photographer copyrights (displayed in-app)
 - **Not affiliated with or endorsed by NASA**
