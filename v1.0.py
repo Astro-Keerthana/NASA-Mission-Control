@@ -1,11 +1,3 @@
-# ╔══════════════════════════════════════════════════════════════════════╗
-# ║  NASA MISSION CONTROL — WEB DASHBOARD v3.0                         ║
-# ║  Streamlit UI  •  Live NASA APIs  •  Interactive Charts            ║
-# ║                                                                      ║
-# ║  pip install streamlit plotly pandas requests Pillow               ║
-# ║  Run: streamlit run nasa_dashboard.py                               ║
-# ╚══════════════════════════════════════════════════════════════════════╝
-
 import io
 import re
 import math
