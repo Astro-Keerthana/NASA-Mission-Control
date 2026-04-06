@@ -12,7 +12,7 @@
 ![NASA API](https://img.shields.io/badge/NASA-Open%20APIs-0B3D91?style=flat&logo=nasa&logoColor=white)
 ![License](https://img.shields.io/badge/License-MIT-green?style=flat)
 
-![Dashboard Preview](assets/preview.png)
+![Dashboard Preview](preview.png)
 
 </div>
 
