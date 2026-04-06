@@ -1,3 +1,11 @@
+# ╔══════════════════════════════════════════════════════════════════════╗
+# ║  NASA MISSION CONTROL — WEB DASHBOARD v3.0                         ║
+# ║  Streamlit UI  •  Live NASA APIs  •  Interactive Charts            ║
+# ║                                                                      ║
+# ║  pip install streamlit plotly pandas requests Pillow               ║
+# ║  Run: streamlit run nasa_dashboard.py                               ║
+# ╚══════════════════════════════════════════════════════════════════════╝
+
 import io
 import re
 import math
@@ -14,7 +22,7 @@ import streamlit as st
 # PAGE CONFIG — must be first Streamlit call
 # ─────────────────────────────────────────────────────────────────────────────
 st.set_page_config(
-    page_title  = "NASA Mission Control",
+    page_title  = "OrbitWatch",
     page_icon   = "🚀",
     layout      = "wide",
     initial_sidebar_state = "expanded",
@@ -191,7 +199,7 @@ hr {
 # ─────────────────────────────────────────────────────────────────────────────
 # CONSTANTS
 # ─────────────────────────────────────────────────────────────────────────────
-NASA_API_KEY   = "YOUR API"
+NASA_API_KEY   = "slGnKhhfZrANBVSzT3sLN1CEuuXaszvb9IIC5NBW"
 BASE_URL       = "https://api.nasa.gov"
 IMG_LIB_URL    = "https://images-api.nasa.gov"
 MOON_DIST_KM   = 384_400
@@ -248,7 +256,7 @@ def fetch_apod() -> dict:
     try:
         r = requests.get(
             "https://apod.nasa.gov/apod/astropix.html",
-            headers={"User-Agent": "NASA-Dashboard/3.0"},
+            headers={"User-Agent": "Orbit-Watch/1.0"},
             timeout=15,
         )
         if r.status_code == 200:
@@ -476,7 +484,7 @@ def load_image_url(url: str):
     try:
         r = requests.get(
             url,
-            headers={"User-Agent": "NASA-Dashboard/3.0"},
+            headers={"User-Agent": "Orbit-Warch/1.0"},
             timeout=15,
         )
         if r.status_code == 200:
@@ -821,7 +829,7 @@ st.markdown("""
     <div style='font-family:Orbitron,monospace; font-size:2.8rem; font-weight:900;
                 color:#00dcff; text-shadow:0 0 30px rgba(0,220,255,0.6);
                 letter-spacing:0.08em; line-height:1.1;'>
-        NASA MISSION CONTROL
+        Orbit Watch
     </div>
     <div style='font-family:monospace; font-size:0.9rem; color:#4060a0;
                 letter-spacing:0.2em; margin-top:8px;'>
@@ -1283,7 +1291,7 @@ st.markdown("<hr>", unsafe_allow_html=True)
 st.markdown(f"""
 <div style='text-align:center; font-family:monospace; font-size:0.75rem;
             color:#304060; padding:16px 0 8px; line-height:2;'>
-    🚀 NASA MISSION CONTROL DASHBOARD v1.0
+    🚀 OrbitWatch v1.0
     &nbsp;|&nbsp;
     Built NASA Open APIs
     <br>
